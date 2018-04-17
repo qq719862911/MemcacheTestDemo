@@ -16,7 +16,7 @@ namespace MemcacheTestDemo
         static void Main(string[] args)
         {
             MemcachedClientConfiguration mcConfig = new MemcachedClientConfiguration();
-         // mcConfig.AddServer("119.29.176.32:11111");
+          mcConfig.AddServer("119.29.176.32:11111");
             //配置多个服务器
            mcConfig.AddServer("127.0.0.1:11211");
            mcConfig.NodeLocatorFactory = new KetamaNodeLocatorFactory();
